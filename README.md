@@ -69,6 +69,6 @@ of such a notebook for `power-grid-model`.
 Each team member has to present part of the work duing the final day.
 
 
-# Learning materials
+## Learning materials
 
 See [Learning materials](./learning_materials/README.md) for a list of useful resources.
