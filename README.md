@@ -50,3 +50,20 @@ If you get errors, you need to inpect the error message and make the required ad
 Before you can merge a PR, the CI (GitHub Actions) automatically checks your tests, code style, and code quality.
 You can only merge it if all of them have passed. 
 Otherwise, please read the CI log to check the failure, and make relevant corrections.
+
+## Final presentation
+
+For the final presentation, you should use a Jupyter Notebook to demo the functionalities of the three assignments.
+We have already created an empty skeleton of the notebook in `example/final_presentation.ipynb` in your repository.
+You just have to fill in your demo presentation in the notebook.
+Your notebook should include:
+
+* Some structured markdown descriptions of the package and how to use it.
+* Some codes to demo the usage of the package.
+* Some figures to visualize the results of the demo.
+
+The notebook should be readable for someone who want to learn how to start to using your package, see an 
+[example](https://power-grid-model.readthedocs.io/en/stable/examples/Power%20Flow%20Example.html)
+of such a notebook for `power-grid-model`.
+
+Each team member has to present part of the work duing the final day.
