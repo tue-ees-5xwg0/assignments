@@ -22,7 +22,7 @@
 * scipy
 * pandas
 
-## Graph library
+## Graph library suggestion
 
 * networkx
 * scipy.sparse.csgraph
