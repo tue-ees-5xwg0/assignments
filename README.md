@@ -62,7 +62,7 @@ Your notebook should include:
 * Some codes to demo the usage of the package.
 * Some figures to visualize the results of the demo.
 
-The notebook should be readable for someone who want to learn how to start to using your package, see an 
+The notebook should be readable for someone who want to learn how to start to use your package, see an 
 [example](https://power-grid-model.readthedocs.io/en/stable/examples/Power%20Flow%20Example.html)
 of such a notebook for `power-grid-model`.
 
