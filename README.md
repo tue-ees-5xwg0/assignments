@@ -51,6 +51,12 @@ Before you can merge a PR, the CI (GitHub Actions) automatically checks your tes
 You can only merge it if all of them have passed. 
 Otherwise, please read the CI log to check the failure, and make relevant corrections.
 
+### License
+
+When you add more open-source packages as the dependecies of your package, 
+be sure to check whether their open-source licenses are compatible 
+with the license of your package (BSD).
+
 ## Final presentation
 
 For the final presentation, you should use a Jupyter Notebook to demo the functionalities of the three assignments.
