@@ -27,6 +27,11 @@
 * networkx
 * scipy.sparse.csgraph
 
+## Power Grid Model
+
+* run power flow
+* (de-)serialization
+
 ## Presentation
 
 * Jupyter Notebook
