@@ -12,6 +12,7 @@
 
 ## Collaboration
 
+* Version control (git)
 * Pull Request
 * CI/CD check with GitHub Actions
 
