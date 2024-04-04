@@ -5,7 +5,7 @@ We also provide some links to the relevant learning materials (tutorials/videos)
 
 ## Assignments
 
-We have in total three assignments, they will be also explained during the lecture.
+We have in total three assignments. They will be also explained during the lecture.
 See the links below for each individual assignment.
 
 * [Assignment 1](./assignment_1/README.md)
