@@ -72,7 +72,11 @@ The notebook should be readable for someone who want to learn how to start to us
 [example](https://power-grid-model.readthedocs.io/en/stable/examples/Power%20Flow%20Example.html)
 of such a notebook for `power-grid-model`.
 
-Each team member has to present part of the work duing the final day.
+Besides the notebook, you can optionally use PowerPoint slides and/or show some source code.
+You need to also reflect the whole assignment to explain the lessosn you have learned, e.g.,
+technical skills and/or collaboration skills.
+
+**Each team member has to present part of the work duing the final day.**
 
 
 ## Learning materials
