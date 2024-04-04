@@ -2,6 +2,11 @@
 
 ## Software engineering
 
+* Python environments and IDE (vscode recommended)
+  * Configure in Windows
+    * Configure natively in Windows
+    * Use WSL + vscode
+  * Configure in macOS
 * Python classes, encapsulation
 * Make small re-usable functions
 * Type hint
