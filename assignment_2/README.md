@@ -1,3 +1,3 @@
-# Assignment 2 (work in progress)
+# Assignment 2: Power Grid Model (work in progress)
 
 
