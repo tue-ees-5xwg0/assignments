@@ -15,6 +15,17 @@ See the links below for each individual assignment.
 You need to finish the assignments one by one in the given order.
 Because later assignments depend on the result of earlier assignments.
 
+### API
+
+In the assignments the required functionalities are described.
+In principle, you are responsible to define proper application programming interfaces (APIs)
+so users of the package can use the functionality.
+You need to make the design choices such as defining classes or independent functions, etc.
+
+To help you to get started, in Assignment 1 we define the APIs for you as an example.
+So you just have to implement the required functionalities.
+In the other two assignments you need to define your own APIs.
+
 ### Pull Requests
 
 All the assignments have to be finished in the form of 
