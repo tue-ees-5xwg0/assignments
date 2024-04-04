@@ -1,3 +1,3 @@
-# Assignment 1 (work in progress)
+# Assignment 1: graph processing (work in progress)
 
 
