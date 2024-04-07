@@ -27,7 +27,7 @@ So you just have to implement the required functionalities.
 In the other two assignments you need to define your own APIs.
 
 **NOTE: even for assignment 1, the given API is just an advice. 
-You are free (and you should if you would like to get a high score) to choose a different (and more efficient) API.**
+You are free (and you probably should if you would like to get a high score) to choose a different (and more efficient) API.**
 
 ### Pull Requests
 

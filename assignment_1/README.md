@@ -1,28 +1,21 @@
 # Assignment 1: Graph Processing (work in progress)
 
+In Assignment 1 we are building a simple graph processing class.
+We build an undirected graph and implement two functionalties:
+  * Find downstream vertices
+  * Find alternative edges
 
-## Input data
+Both functions will be used in later assignments.
+You need to select proper graph algorithms to implement those two functions.
+You are also supposed to write the code as efficient as possible,
+so that the code can perform well with large datasets.
 
-A graph input with:
+For this and only for this assignment, we provide a skeleton of the code
+in [graph_processing.py](./graph_processing.py) including:
+  * The input data definition
+  * The API definition
+  * The expected behaviour including error handling.
+  * Some examples
 
-* Vertex IDs
-* Edge IDs
-* Vertex ID pairs for all the edges
-* Edge status (enabled, disabled)
-* a source vertex ID
-
-## Functionalities
-
-* Initialize and check the graph, raise error if
-  * The IDs are not unique
-  * The length of Edge IDs, vertex ID pairs and status does not match
-  * ID pairs in edge refer to non-existing vertex ID
-  * Source vertex ID refers to a non-existing vertex ID
-  * The graph is not fully connected at initial state
-  * The graph is not acyclic (i.e. has cycles)
-* Given an edge ID
-  * Return the list of downstream vertex IDs, including the vertex inmmediately downstream of the edge
-  * Raise error if the edge ID does not exist
-* Given an enabled edge, do the following analysis
-  * If the edge is going to be disabled, which (currently disabled) edge can be enabled to ensure that the graph is again fully connected and acyclic?
-  * Return a list edge IDs of all possible solutions
+**NOTE: the given API is just an advice. 
+You are free (and you probably should if you would like to get a high score) to choose a different (and more efficient) API.**
