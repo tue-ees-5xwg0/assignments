@@ -112,20 +112,20 @@ class GraphProcessor:
 
         For example, given the following graph:
 
-        vertex_0 (source) --edge_1(enabled)-- vertex_2 --edge_8(enabled)-- vertex_9
-                 |                               |
-                 |                           edge_6(disabled)
-                 |                               |
-                 -----------edge_3(enabled)-- vertex_4
+        vertex_0 (source) --edge_1(enabled)-- vertex_2 --edge_9(enabled)-- vertex_10
                  |                               |
                  |                           edge_7(disabled)
                  |                               |
+                 -----------edge_3(enabled)-- vertex_4
+                 |                               |
+                 |                           edge_8(disabled)
+                 |                               |
                  -----------edge_5(enabled)-- vertex_6
 
-        Call find_alternative_edges with disabled_edge_id=1 will return [6]
-        Call find_alternative_edges with disabled_edge_id=3 will return [6, 7]
-        Call find_alternative_edges with disabled_edge_id=5 will return [7]
-        Call find_alternative_edges with disabled_edge_id=8 will return []
+        Call find_alternative_edges with disabled_edge_id=1 will return [7]
+        Call find_alternative_edges with disabled_edge_id=3 will return [7, 8]
+        Call find_alternative_edges with disabled_edge_id=5 will return [8]
+        Call find_alternative_edges with disabled_edge_id=9 will return []
 
         Args:
             disabled_edge_id: edge id (which is currently enabled) to be disabled
