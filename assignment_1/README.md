@@ -1,4 +1,4 @@
-# Assignment 1: Graph Processing (work in progress)
+# Assignment 1: Graph Processing
 
 In Assignment 1 we are building a simple graph processing class.
 We build an undirected graph and implement two functionalties:
