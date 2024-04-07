@@ -41,14 +41,26 @@ class GraphProcessor:
         edge_enabled: List[bool],
         source_vertex_id: int,
     ) -> None:
-        """_summary_
+        """
+        Initialize a graph processor object.
+        Check if the input is valid and raise exceptions if not.
+        The following conditions should be checked:
+            1. vertex_ids and edge_ids should be unique. (IDNotUniqueError)
+            2. edge_vertex_id_pairs should have the same length as edge_ids. (InputLengthDoesNotMatchError)
+            3. edge_vertex_id_pairs should contain valid vertex ids. (IDNotFoundError)
+            4. edge_enabled should have the same length as edge_ids. (InputLengthDoesNotMatchError)
+            5. source_vertex_id should be a valid vertex id. (IDNotFoundError)
+            6. The graph should be fully connected. (GraphNotFullyConnectedError)
+            7. The graph should not contain cycles. (GraphCycleError)
+        If one certain condition is not satisfied, the error in the parentheses should be raised.
 
         Args:
-            vertex_ids: _description_
-            edge_ids: _description_
-            edge_vertex_id_pairs: _description_
-            edge_enabled: _description_
-            source_vertex_id: _description_
+            vertex_ids: list of vertex ids
+            edge_ids: liest of edge ids
+            edge_vertex_id_pairs: list of tuples of two integer
+                Each tuple is a vertex id pair of the edge.
+            edge_enabled: list of bools indicating of an edge is enabled or not
+            source_vertex_id: vertex id of the source in the graph
         """
         # put your implementation here
         pass
