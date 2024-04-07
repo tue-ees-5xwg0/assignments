@@ -27,10 +27,15 @@ class GraphCycleError(Exception):
     pass
 
 
+class EdgeAlreadyDisabledError(Exception):
+    pass
+
+
 class GraphProcessor:
     """
     General documentation of this class.
     You need to describe the purpose of this class and the functions in it.
+    We are using an undirected graph in the processor.
     """
 
     def __init__(
@@ -69,15 +74,18 @@ class GraphProcessor:
     def find_downstream_vertices(self, edge_id: int) -> List[int]:
         """
         Given an edge id, return all the vertices which are in the downstream of the edge,
-            with respect to the source vertex. 
+            with respect to the source vertex.
             Including the downstream vertex of the edge itself!
 
         Only enabled edges should be taken into account in the analysis.
         If the given edge_id is a disabled edge, it should return empty list.
         If the given edge_id does not exist, it should raise IDNotFoundError.
-        
+
+
         For example, given the following graph (all edges enabled):
+
             vertex_0 (source) --edge_1-- vertex_2 --edge_3-- vertex_4
+
         Call find_downstream_vertices with edge_id=1 will return [2, 4]
         Call find_downstream_vertices with edge_id=3 will return [4]
 
@@ -91,13 +99,39 @@ class GraphProcessor:
         pass
 
     def find_alternative_edges(self, disabled_edge_id: int) -> List[int]:
-        """_summary_
+        """
+        Given an enabled edge, do the following analysis:
+            If the edge is going to be disabled,
+                which (currently disabled) edge can be enabled to ensure
+                that the graph is again fully connected and acyclic?
+            Return a list of all alternative edges.
+        If the disabled_edge_id is not a valid edge id, it should raise IDNotFoundError.
+        If the disabled_edge_id is already disabled, it should raise EdgeAlreadyDisabledError.
+        If there are no alternative to make the graph fully connected again, it should return empty list.
+
+
+        For example, given the following graph:
+
+        vertex_0 (source) --edge_1(enabled)-- vertex_2 --edge_8(enabled)-- vertex_9
+                 |                               |
+                 |                           edge_6(disabled)
+                 |                               |
+                 -----------edge_3(enabled)-- vertex_4
+                 |                               |
+                 |                           edge_7(disabled)
+                 |                               |
+                 -----------edge_5(enabled)-- vertex_6
+
+        Call find_alternative_edges with disabled_edge_id=1 will return [6]
+        Call find_alternative_edges with disabled_edge_id=3 will return [6, 7]
+        Call find_alternative_edges with disabled_edge_id=5 will return [7]
+        Call find_alternative_edges with disabled_edge_id=8 will return []
 
         Args:
-            disabled_edge_id: _description_
+            disabled_edge_id: edge id (which is currently enabled) to be disabled
 
         Returns:
-            _description_
+            A list of alternative edge ids.
         """
         # put your implementation here
         pass
