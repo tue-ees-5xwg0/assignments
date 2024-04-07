@@ -49,5 +49,5 @@ We provide a test dataset with input and expected output in [SharePoint](https:/
 To read the PGM JSON file into PGM input format in the memory, you need to use [PGM Serialization](https://power-grid-model.readthedocs.io/en/stable/examples/Serialization%20Example.html).
 
 To read the load profiles into tables in the memory, you need to read from [`parquet`](https://parquet.apache.org/) files.
-For example, you can use [`pandas`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_parquet.html)
+For example, you can use [`pandas.read_parquet`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_parquet.html)
 to read `parquet` files into `pandas.DataFrame`.
