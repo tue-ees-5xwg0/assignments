@@ -42,7 +42,8 @@ class GraphProcessor:
         source_vertex_id: int,
     ) -> None:
         """
-        Initialize a graph processor object.
+        Initialize a graph processor object with an undirected graph.
+        Only the edges which are enabled are taken into account.
         Check if the input is valid and raise exceptions if not.
         The following conditions should be checked:
             1. vertex_ids and edge_ids should be unique. (IDNotUniqueError)
@@ -66,13 +67,25 @@ class GraphProcessor:
         pass
 
     def find_downstream_vertices(self, edge_id: int) -> List[int]:
-        """_summary_
+        """
+        Given an edge id, return all the vertices which are in the downstream of the edge,
+            with respect to the source vertex. 
+            Including the downstream vertex of the edge itself!
+
+        Only enabled edges should be taken into account in the analysis.
+        If the given edge_id is a disabled edge, it should return empty list.
+        If the given edge_id does not exist, it should raise IDNotFoundError.
+        
+        For example, given the following graph (all edges enabled):
+            vertex_0 (source) --edge_1-- vertex_2 --edge_3-- vertex_4
+        Call find_downstream_vertices with edge_id=1 will return [2, 4]
+        Call find_downstream_vertices with edge_id=3 will return [4]
 
         Args:
-            edge_id: _description_
+            edge_id: edge id to be searched
 
         Returns:
-            _description_
+            A list of all downstream vertices.
         """
         # put your implementation here
         pass
