@@ -14,7 +14,7 @@ For this and only for this assignment, we provide a skeleton of the code
 in [graph_processing.py](./graph_processing.py) including:
   * The input data definition
   * The API definition
-  * The expected behaviour including error handling.
+  * The expected behaviour including error handling. In your test you need to test all the required error handling.
   * Some examples
 
 **NOTE: the given API is just an advice. 
