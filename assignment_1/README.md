@@ -19,3 +19,10 @@ in [graph_processing.py](./graph_processing.py) including:
 
 **NOTE: the given API is just an advice. 
 You are free (and you probably should if you would like to get a high score) to choose a different (and more efficient) API.**
+
+## Recommended graph packages
+
+You are free to choose any graph packages, as long as the license is compatible. We recommend two famous packages:
+
+  * [`networkx`](https://networkx.org/documentation/stable/index.html)
+  * [`scipy.sparse.csgraph`](https://docs.scipy.org/doc/scipy/reference/sparse.csgraph.html)
