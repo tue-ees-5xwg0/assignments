@@ -35,11 +35,11 @@ You need to test the error handling which is explicitely listed.
     * The node ID with the minimum p.u. voltage
   * A table with each row representing a line, with the following columns:
     * Line ID
-    * Energy loss of the line across the timeline in Joule
+    * Energy loss of the line across the timeline in kWh (pay attention to unit conversions!)
       * You need to use the descrete numerical integral with [Trapezoidal rule](https://en.wikipedia.org/wiki/Trapezoidal_rule).
-    * Maximum loading of the line across the whole timeline
+    * Maximum loading in p.u. of the line across the whole timeline
     * Timestamp of this maximum loading moment
-    * Minimum loading of the line across the whole timeline
+    * Minimum loading in p.u. of the line across the whole timeline
     * Timestamp of this minimum loading moment
 
 ## Test datasets
