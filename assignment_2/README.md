@@ -37,7 +37,7 @@ You need to test the error handling which is explicitely listed.
     * Line ID
     * Energy loss of the line across the timeline in Joule
       * You need to use the descrete numerical integral with [Trapezoidal rule](https://en.wikipedia.org/wiki/Trapezoidal_rule).
-    * Maximum laoding of the line across the whole timeline
+    * Maximum loading of the line across the whole timeline
     * Timestamp of this maximum loading moment
     * Minimum loading of the line across the whole timeline
     * Timestamp of this minimum loading moment
