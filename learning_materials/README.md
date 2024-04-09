@@ -28,6 +28,13 @@
 * scipy
 * pandas
 
+## Graph theory
+
+* directed, undirected graph
+* DFS, BFS search
+* Connected components
+* Cycle finding
+
 ## Graph library suggestion
 
 * networkx
