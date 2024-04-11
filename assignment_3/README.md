@@ -102,6 +102,33 @@ After assignment of EV profiles, run a time-series power flow as in Assignment 2
 
 ### Optimal tap position 
 
-Do time-series power flow calculation, return the results as in Assignment 2.
+In this functionality, the user would like to optimize the tap position of the transformer in the LV grid.
+
+* The functionality returns the optimal tap position of the transformer by repeating time-series power flow calculation of the whole year for all possible tap positions.
+* See the [example notebook](https://power-grid-model.readthedocs.io/en/stable/examples/Transformer%20Examples.html) for how to work with transformers in PGM.
+* After the power flow calculation with all possible tap positions, we should return the optimal tap position by
+  * The minimal total energy loss of all the lines and the whole year.
+  * The minimal (averaged acroos all nodes) deviation of (max and min) p.u. node voltages with respect to 1 p.u.
+* You need to design the API to let the user select what the optimization creteria is.
 
 ### N-1 calculation
+
+In this functionality, the user would like to know alternative grid topology when a given line is out of service.
+The user will provide the Line ID which is going to be out of service.
+
+* If the given Line ID is not a valid `line`, raise proper error.
+* If the given Line ID is not connected at both sides in the base case (`from_status` and `to_status` should be both `1`), raise proper error.
+* You need to disconnect the designated line, set both `from_status` and `to_status` to `0`. And find list of Line IDs which are currently disconnected, and can be connected to make the grid fully connected again. Tip: use the graph function from Assignment 1.
+* For each alternative `line` to be connected (set `to_status` to `1`), run the time-series power flow for the whole year.
+* Return a table to summarize the results, each row in the table is one alternative scenario. The following columns are needed:
+  * The alternative Line ID to be connected
+  * The maximum loading among of lines and timestamps
+  * The Line ID of this maximum
+  * The timestamp of this maximum
+
+## Testing with randomness
+
+In the functionality of EV charging you need to randomly assign the EV profile.
+To make the test reproducible, you can define random seed in your function argument.
+In your test, you can set a fixed random seed so that your test can always produce the same data.
+See [this faq](https://stackoverflow.com/questions/21494489/what-does-numpy-random-seed0-do) for an exaplanation of random seed.

@@ -28,13 +28,13 @@ You need to test the error handling which is explicitely listed.
   * Raise (passthrough the `ValidationException`) error if the batch dataset is invalid.
 * Aggregate the power flow results in the following two tables:
   * A table with each row representing a timestamp, with the following columns:
-    * Timestamp
+    * Timestamp (index column)
     * Maximum p.u. voltage of all the nodes for this timestamp
     * The node ID with the maximum p.u. voltage
     * Minimum p.u. voltage of all the nodes for this timestamp
     * The node ID with the minimum p.u. voltage
   * A table with each row representing a line, with the following columns:
-    * Line ID
+    * Line ID (index column)
     * Energy loss of the line across the timeline in kWh (pay attention to unit conversions!)
       * You need to use the descrete numerical integral with [Trapezoidal rule](https://en.wikipedia.org/wiki/Trapezoidal_rule).
     * Maximum loading in p.u. of the line across the whole timeline
