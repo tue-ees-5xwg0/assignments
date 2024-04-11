@@ -5,14 +5,17 @@ grid analytics functions.
 You will need the functionality of [Assignment 1](../assignment_1/README.md) and 
 [Assignment 2](../assignment_2/README.md) to do this assignment.
 
-**You need to define the proper APIs including input data format for your package!**
+**You need to define the proper APIs including input data arguments for your package!**
 
-## Basic Input data
+## Input data
+
+The following input data are provided from the user.
+You need to define how the user can give these input data to your package (APIs).
 
 * A LV grid in PGM input format
   * The grid has one MV/LV transformer.
-  * The grid is constructed in meshed structure, but some lines are disconnected so its base state is in a tree-structure.
-  * The grid consists of many `sym_load`, each representing one LV household.
+  * The grid is constructed in meshed (ring) structure, but some lines are disconnected (`to_status` is `0`), so that its base state is in a tree-structure.
+  * The grid consists of many `sym_load`, each representing one LV household. There are also many nodes without any `sym_load`.
 * A list of line IDs which are the beginning of the LV feeders.
 * One-year (active and reactive) load profile of all the `sym_load` in the grid
   * In the same format as in Assignment 2
