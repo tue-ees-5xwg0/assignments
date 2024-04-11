@@ -1,6 +1,6 @@
 # Assignment 2: Power Grid Model
 
-In Assignment 2 we are going to write a power grid analysis module
+In Assignment 2 we are going to write a power grid calculation module
 with [`power-grid-model`](https://power-grid-model.readthedocs.io/en/stable/) as the calculation core.
 We describe here the input of your task, and the expected functionalities.
 

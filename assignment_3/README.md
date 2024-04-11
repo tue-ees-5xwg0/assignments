@@ -1,10 +1,17 @@
 # Assignment 3: Power System Simulation (work in progress)
 
+In Assignment 3 we are going to build a package with some low voltage (LV)
+grid analytics functions.
+You will need the functionality of [Assignment 1](../assignment_1/README.md) and 
+[Assignment 2](../assignment_2/README.md) to do this assignment.
+
+**You need to define the proper APIs including input data format for your package!**
+
 ## Basic Input data
 
 * A LV grid in PGM input format
   * The grid has one MV/LV transformer.
-  * The grid is constructed in meshed structure, but some lines are disconnected so its original state is in tree-structure.
+  * The grid is constructed in meshed structure, but some lines are disconnected so its base state is in a tree-structure.
   * The grid consists of many `sym_load`, each representing one LV household.
 * A list of line IDs which are the beginning of the LV feeders.
 * One-year (active and reactive) load profile of all the `sym_load` in the grid
