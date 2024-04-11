@@ -78,17 +78,17 @@ Raise or passthrough relevant errors.
 * The IDs in active load profile and reactive load profile are valid IDs of `sym_load`.
 * The number of EV charging profile is at least the same as the number of `sym_load`.
 
-### EV penatration level
+### EV penetration level
 
-Given an input of expected electrical vehicle (EV) penatration level,
+Given an input of expected electrical vehicle (EV) penetration level,
 i.e. the percentage of houses which has EV charged at home,
 randomly add EV charging profiles to the houses according to the following creteria.
 
-* The number of EVs per LV feeder should be `round_down[penatration_level * total_houses / number_of_feeders]`.
+* The number of EVs per LV feeder should be `round_down[penetration_level * total_houses / number_of_feeders]`.
   * For example, given
     * number of houses: 150
     * number of feeders: 7
-    * penatration level: 20%
+    * penetration level: 20%
     * The number of EVs per LV feeder should be: `round_down(20% * 150 / 7) = 4`
 * Within a LV feeder, randomly select houses which will have EVs.
   *  You need to use the graph function from Assignment 1 to know which houses belong to which feeder.
