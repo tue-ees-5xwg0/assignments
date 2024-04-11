@@ -24,6 +24,8 @@ You need to define how the user can give these input data to your package (APIs)
   * The reactive power is assumed to be always zero.
   * The number of profiles is at least as many as the number of `sym_load` in the grid.
 
+### Example drawing
+
 See below an example drawing of such a LV grid.
 
 ```
@@ -45,6 +47,14 @@ transformer_2
             |                                        |
             -----------line_24(disconnected)----------                           
 ```
+
+In the example grid above we have a ring-constrcuted LV grid,
+with `line_24` disconnected.
+So its initial state is in radial structure.
+
+The list of Line IDs of the beginning of the feerders are in this case `[4, 5]`.
+
+There are 4 `sym_load` in the LV grid. However, there are 10 `node` in the grid.
 
 ## Functionalities
 
