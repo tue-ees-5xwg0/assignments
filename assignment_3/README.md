@@ -62,6 +62,8 @@ We expect you to implement the following functionalities.
 You need to design how the functionalities are organized in some reasonable abstractions,
 e.g., Python classes or independent functions.
 
+**NOTE: the funtionalities are independent from each other. For example, for optimal tap position analysis, you need to analyse the original grid with house profile, WITHOUT the EV profile.**
+
 ### Input data validity check
 
 Check the following validity criteria for the input data. 
@@ -80,7 +82,7 @@ Raise or passthrough relevant errors.
 
 ### EV penetration level
 
-Given an input of expected electrical vehicle (EV) penetration level,
+Given a (user-provided) input of electrical vehicle (EV) penetration level,
 i.e. the percentage of houses which has EV charged at home,
 randomly add EV charging profiles to the houses according to the following creteria.
 
