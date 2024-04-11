@@ -80,10 +80,23 @@ Raise or passthrough relevant errors.
 
 ### EV penatration level
 
-Given an input of expected EV penatration level (how many houses have PVs), randomly select houses which will get the EVs, 
-and randomly add EV charging profile to those houses. You should not assign the same profile to multiple houses.
+Given an input of expected electrical vehicle (EV) penatration level,
+i.e. the percentage of houses which has EV charged at home,
+randomly add EV charging profiles to the houses according to the following creteria.
 
-The EVs need to be approximately evenly distributed to all the LV feeders.
+* The number of EVs per LV feeder should be `round_down[penatration_level * total_houses / number_of_feeders]`.
+  * For example, given
+    * number of houses: 150
+    * number of feeders: 7
+    * penatration level: 20%
+    * The number of EVs per LV feeder should be: `round_down(20% * 150 / 7) = 4`
+* Within a LV feeder, randomly select houses which will have EVs.
+  *  You need to use the graph function from Assignment 1 to know which houses belong to which feeder.
+* For each selected house with EV, randomly select an EV charging profile to add to the `sym_load` of that house.
+  * You should not assign the same EV profile more than once. 
+  * That's why in the input data number of EV charging profile is at least the same as the number of `sym_load`.
+
+After assignment of EV profiles, run a time-series power flow as in Assignment 2, return the two aggregation tables.
 
 ### Optimal tap position 
 
