@@ -24,6 +24,28 @@ You need to define how the user can give these input data to your package (APIs)
   * The reactive power is assumed to be always zero.
   * The number of profiles is at least as many as the number of `sym_load` in the grid.
 
+See below an example drawing of such a LV grid.
+
+```
+source_0
+    |
+  node_1 
+    |
+transformer_2
+    |
+  node_3-----------------------------------------------
+            |                                        |
+          line_4                                  line_5
+            |                                        |
+          node_6--line_8--node_9-sym_load_10      node_7--line_11--node_12-sym_load_13
+            |                                        |
+          line_14                                 line_15
+            |                                        |
+          node_16--line_18--node_19-sym_load_20   node_17--line_21--node_22-sym_load_23
+            |                                        |
+            -----------line_24(disconnected)----------                           
+```
+
 ## Functionalities
 
 We expect you to implement the following functionalities.
