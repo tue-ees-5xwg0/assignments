@@ -17,12 +17,18 @@ You need to define how the user can give these input data to your package (APIs)
   * The grid is constructed in meshed (ring) structure, but some lines are disconnected (`to_status` is `0`), so that its base state is in a tree-structure.
   * The grid consists of many `sym_load`, each representing one LV household. There are also many nodes without any `sym_load`.
 * A list of line IDs which are the beginning of the LV feeders.
-* One-year (active and reactive) load profile of all the `sym_load` in the grid
-  * In the same format as in Assignment 2
+* One-year (active and reactive) load profile of all the `sym_load` in the grid.
+  * In the same format as in [Assignment 2](../assignment_2/README.md)
 * A pool of one-year EV charging profiles
+  * The profiles provide the active power curve per EV.
+  * The reactive power is assumed to be always zero.
   * The number of profiles is at least as many as the number of `sym_load` in the grid.
 
 ## Functionalities
+
+We expect you to implement the following functionalities.
+You need to design how the functionalities are organized in some reasonable abstractions,
+e.g., Python classes or independent functions.
 
 ### EV penatration level
 
