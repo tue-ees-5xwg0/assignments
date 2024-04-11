@@ -68,6 +68,7 @@ Check the following validity criteria for the input data.
 Raise or passthrough relevant errors.
 
 * The LV grid should be a valid PGM input data.
+* The LV grid has exactly one `transformer`, and one `source`.
 * All IDs in the LV Feeder IDs are valid line IDs.
 * All the lines in the LV Feeder IDs have the `from_node` the same as the `to_node` of the `transformer`.
 * The grid is fully connected in the initial state.
