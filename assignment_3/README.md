@@ -16,7 +16,7 @@ You need to define how the user can give these input data to your package (APIs)
   * The grid has one MV/LV transformer.
   * The grid is constructed in meshed (ring) structure, but some lines are disconnected (`to_status` is `0`), so that its base state is in a tree-structure.
   * The grid consists of many `sym_load`, each representing one LV household. There are also many nodes without any `sym_load`.
-* A list of line IDs which are the beginning of the LV feeders.
+* LV feeder IDs: a list of line IDs which are the beginning of the LV feeders.
 * One-year (active and reactive) load profile of all the `sym_load` in the grid.
   * In the same format as in [Assignment 2](../assignment_2/README.md)
 * A pool of one-year EV charging profiles
@@ -52,7 +52,7 @@ In the example grid above we have a ring-constrcuted LV grid,
 with `line_24` disconnected.
 So its initial state is in radial structure.
 
-The list of Line IDs of the beginning of the feerders are in this case `[4, 5]`.
+The LV feeder IDs is the list of Line IDs of the beginning of the feerders, which is in this case `[4, 5]`.
 
 There are 4 `sym_load` in the LV grid. However, there are 10 `node` in the grid.
 
@@ -61,6 +61,21 @@ There are 4 `sym_load` in the LV grid. However, there are 10 `node` in the grid.
 We expect you to implement the following functionalities.
 You need to design how the functionalities are organized in some reasonable abstractions,
 e.g., Python classes or independent functions.
+
+### Input data validity check
+
+Check the following validity criteria for the input data. 
+Raise or passthrough relevant errors.
+
+* The LV grid should be a valid PGM input data.
+* All IDs in the LV Feeder IDs are valid line IDs.
+* All the lines in the LV Feeder IDs have the `from_node` the same as the `to_node` of the `transformer`.
+* The grid is fully connected in the initial state.
+* The grid has no cycles in the initial state.
+* The timestamps are matching between the active load profile, reactive load profile, and EV charging profile.
+* The IDs in active load profile and reactive load profile are matching.
+* The IDs in active load profile and reactive load profile are valid IDs of `sym_load`.
+* The number of EV charging profile is at least the same as the number of `sym_load`.
 
 ### EV penatration level
 
