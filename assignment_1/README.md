@@ -15,7 +15,7 @@ in [graph_processing.py](./graph_processing.py) including:
   * The input data definition
   * The API definition
   * The expected behaviour including error handling. In your test you need to test all the required error handling.
-  * Some examples. In your test you should at leat test these examples. You can of course add more test cases.
+  * Some examples in the docstring of the function. In your test you should at least test these examples. You can of course add more test cases.
 
 **NOTE: the given API is just an advice. 
 You are free (and you probably should if you would like to get a high score) to choose a different (and more efficient) API.**
