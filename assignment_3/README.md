@@ -1,4 +1,4 @@
-# Assignment 3: Power System Simulation (work in progress)
+# Assignment 3: Power System Simulation
 
 In Assignment 3 we are going to build a package with some low voltage (LV)
 grid analytics functions.
