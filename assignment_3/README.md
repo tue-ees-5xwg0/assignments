@@ -18,7 +18,7 @@ You need to define how the user can give these input data to your package (APIs)
   * The grid consists of many `sym_load`, each representing one LV household. There are also many nodes without any `sym_load`.
 * LV feeder IDs: a list of line IDs which are the beginning of the LV feeders.
 * One-year (active and reactive) load profile of all the `sym_load` in the grid.
-  * In the same format as in [Assignment 2](../assignment_2/README.md)
+  * In the same format as in [Assignment 2](../assignment_2/README.md#input-data)
 * A pool of one-year EV charging profiles
   * The profiles provide the active power curve per EV.
   * The reactive power is assumed to be always zero.
@@ -136,5 +136,11 @@ See [this faq](https://stackoverflow.com/questions/21494489/what-does-numpy-rand
 ## Test and demo datasets
 
 We provide two datasets in the [SharePoint](https://tuenl.sharepoint.com/:f:/s/5XWG0-PowerSystemCalculationandSimualtion/Ejs9LjM7lulOtVgqstXVh7UBc4ifbYb1WQ5s2q_G0zXq3g?e=fGt80Y).
+
 * The `small_network` is for testing purpose. You should use it in your test code.
+  * **No expeted output is provided for this assignment. You need to make the expected output by yourself in the test, either via another script or manually.**
 * The `big_network` is for demo purpose. You should use it in your Jupyter Notebook presentation.
+
+Just as [Assignment 2](../assignment_2/README.md#test-datasets), the network data is in PGM JSON format, and the load/EV profiles are in `parquet` format.
+
+**NOTE: The EV charging profile does not have `sym_load` IDs in the column header. They are just sequence numbers of the pool. Assigning the EV profiles to `sym_load` is part of the assignment tasks.**
