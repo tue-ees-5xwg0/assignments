@@ -125,7 +125,7 @@ The user will provide the Line ID which is going to be out of service.
   * The maximum loading among of lines and timestamps
   * The Line ID of this maximum
   * The timestamp of this maximum
-* If there is no alternatives, it still should return an empty table with the correct data format and heading. You should test this behaviour in the uni tests.
+* If there are no alternatives, it still should return an empty table with the correct data format and heading. You should test this behaviour in the uni tests.
 
 ## Testing with randomness
 
