@@ -144,4 +144,6 @@ We provide two datasets in the [SharePoint](https://tuenl.sharepoint.com/:f:/s/5
 
 Just as [Assignment 2](../assignment_2/README.md#test-datasets), the network data is in PGM JSON format, and the load/EV profiles are in `parquet` format.
 
+In each network case, the `meta_data.json` file describes the important information of the network, including the LV feeders.
+
 **NOTE: The EV charging profile does not have `sym_load` IDs in the column header. They are just sequence numbers of the pool. Assigning the EV profiles to `sym_load` is part of the assignment tasks.**
