@@ -125,7 +125,7 @@ The user will provide the Line ID which is going to be out of service.
   * The maximum loading among of lines and timestamps
   * The Line ID of this maximum
   * The timestamp of this maximum
-* If there are no alternatives, it still should return an empty table with the correct data format and heading. You should test this behaviour in the uni tests.
+* If there are no alternatives, it still should return an empty table with the correct data format and heading. You should test this behaviour in the unit tests.
 
 ## Testing with randomness
 
@@ -134,7 +134,7 @@ To make the test reproducible, you can define random seed in your function argum
 In your test, you can set a fixed random seed so that your test can always produce the same data.
 See [this faq](https://stackoverflow.com/questions/21494489/what-does-numpy-random-seed0-do) for an exaplanation of random seed.
 
-## Test and demo datasets
+## Test and demo datasets (work in progress)
 
 We provide two datasets in the [SharePoint](https://tuenl.sharepoint.com/:f:/s/5XWG0-PowerSystemCalculationandSimualtion/Ejs9LjM7lulOtVgqstXVh7UBc4ifbYb1WQ5s2q_G0zXq3g?e=fGt80Y).
 
