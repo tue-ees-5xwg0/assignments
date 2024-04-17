@@ -45,7 +45,7 @@ As a collaboration requirement, for each assignment, we require:
 The contributed code needs to be tested for both input and invalid input.
 As a general suggestion, each single PR can contain a small part of the work including the test on this part.
 One cannot test all the possible invalid situations. 
-Therefore, in each assignemnt, we explicitly describe that the package needs to check certain some invalid input.
+Therefore, in each assignment, we explicitly describe that the package needs to check certain some invalid input.
 And all these checks have to be properly tested.
 
 ### Code style and quality
