@@ -52,15 +52,17 @@
 
 ## Graph theory
 
-* directed, undirected graph
-* DFS, BFS search
-* Connected components
-* Cycle finding
+* directed vs undirected graph: https://www.geeksforgeeks.org/what-is-the-difference-between-an-undirected-and-a-directed-graph/
+* Tree traversal: 
+  * Breath-First Search: https://en.wikipedia.org/wiki/Breadth-first_search
+  * Depth-First Search: https://en.wikipedia.org/wiki/Depth-first_search
+* Connected components: https://en.wikipedia.org/wiki/Component_(graph_theory)
+* Cycle detection: https://en.wikipedia.org/wiki/Cycle_detection
 
 ## Graph library suggestion
 
-* networkx
-* scipy.sparse.csgraph
+* networkx: https://networkx.org/documentation/stable/tutorial.html
+* scipy.sparse.csgraph: https://docs.scipy.org/doc/scipy/reference/sparse.csgraph.html
 
 ## Power Grid Model
 
