@@ -17,9 +17,9 @@ You need to define how the user can give these input data to your package (APIs)
   * The grid is constructed in meshed (ring) structure, but some lines are disconnected (`to_status` is `0`), so that its base state is in a tree-structure.
   * The grid consists of many `sym_load`, each representing one LV household. There are also many nodes without any `sym_load`.
 * LV feeder IDs: a list of line IDs which are the beginning of the LV feeders.
-* One-year (active and reactive) load profile of all the `sym_load` in the grid.
+* A (active and reactive) load profile of all the `sym_load` in the grid for certain time period.
   * In the same format as in [Assignment 2](../assignment_2/README.md#input-data)
-* A pool of one-year EV charging profiles
+* A pool of EV charging profiles for the same time period as the time period of load profile.
   * The profiles provide the active power curve per EV.
   * The reactive power is assumed to be always zero.
   * The number of profiles is at least as many as the number of `sym_load` in the grid.
@@ -104,10 +104,10 @@ After assignment of EV profiles, run a time-series power flow as in Assignment 2
 
 In this functionality, the user would like to optimize the tap position of the transformer in the LV grid.
 
-* The functionality returns the optimal tap position of the transformer by repeating time-series power flow calculation of the whole year for all possible tap positions.
+* The functionality returns the optimal tap position of the transformer by repeating time-series power flow calculation of the whole time period for all possible tap positions.
 * See the [example notebook](https://power-grid-model.readthedocs.io/en/stable/examples/Transformer%20Examples.html) for how to work with transformers in PGM.
 * After the power flow calculation with all possible tap positions, we should return the optimal tap position by
-  * The minimal total energy loss of all the lines and the whole year.
+  * The minimal total energy loss of all the lines and the whole time period.
   * The minimal (averaged acroos all nodes) deviation of (max and min) p.u. node voltages with respect to 1 p.u.
 * You need to design the API to let the user select what the optimization creteria is.
 
@@ -119,7 +119,7 @@ The user will provide the Line ID which is going to be out of service.
 * If the given Line ID is not a valid `line`, raise proper error.
 * If the given Line ID is not connected at both sides in the base case (`from_status` and `to_status` should be both `1`), raise proper error.
 * You need to disconnect the designated line, set both `from_status` and `to_status` to `0`. And find list of Line IDs which are currently disconnected, and can be connected to make the grid fully connected again. Tip: use the graph function from Assignment 1.
-* For each alternative `line` to be connected (set `to_status` to `1`), run the time-series power flow for the whole year.
+* For each alternative `line` to be connected (set `to_status` to `1`), run the time-series power flow for the whole time period.
 * Return a table to summarize the results, each row in the table is one alternative scenario. The following columns are needed:
   * The alternative Line ID to be connected
   * The maximum loading among of lines and timestamps
