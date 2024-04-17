@@ -45,10 +45,10 @@
 
 ## Scientific Python
 
-* vectorization code
-* numpy
-* scipy
-* pandas
+* vectorization: https://www.geeksforgeeks.org/vectorization-in-python/
+* numpy: https://numpy.org/devdocs/user/quickstart.html
+* scipy: https://docs.scipy.org/doc/scipy/tutorial/index.html
+* pandas: https://pandas.pydata.org/docs/user_guide/index.html
 
 ## Graph theory
 
