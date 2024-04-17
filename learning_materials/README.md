@@ -27,12 +27,14 @@
     * Set up a virtual environment (optional but recommended): Open the integrated terminal in VSCode by going to View > Terminal. Create a virtual environment by running (depending on your Python version): `python3.12 -m venv .venv`. Activate the virtual environment: `.\venv\Scripts\activate`. 
     * Install dependencies: If your project requires any external packages, you can install them using pip while your virtual environment is activated. For example: `pip install <package_name>`.
     * Start coding
-* Python classes, encapsulation
-* Make small re-usable functions
-* Type hint
-* In-code docstring
-* Test using pytest (include test exception)
-* Code style, code quality
+* Python classes: https://www.youtube.com/watch?v=ZDa-Z5JzLYM
+* encapsulation: https://www.youtube.com/watch?v=GN1LR0UoFI4
+* Make small re-usable functions: https://codefather.tech/blog/python-functions/
+* Type hinting: https://www.pythontutorial.net/python-basics/python-type-hints/
+* Documenting Python code: https://realpython.com/documenting-python-code/
+* Test using pytest : https://realpython.com/pytest-python-testing/
+* Test exeptions: https://pytest-with-eric.com/introduction/pytest-assert-exception/
+* Code style, code quality: https://python.plainenglish.io/best-practices-for-python-code-quality-and-style-4059dd1a3b37
 * Licenses of dependencies
 
 ## Collaboration
