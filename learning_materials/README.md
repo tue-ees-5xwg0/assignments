@@ -1,4 +1,4 @@
-# Learning materials (work in progress)
+# Learning materials
 
 ## Software engineering
 
