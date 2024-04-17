@@ -35,13 +35,13 @@
 * Test using pytest : https://realpython.com/pytest-python-testing/
 * Test exeptions: https://pytest-with-eric.com/introduction/pytest-assert-exception/
 * Code style, code quality: https://python.plainenglish.io/best-practices-for-python-code-quality-and-style-4059dd1a3b37
-* Licenses of dependencies
+* Licenses of dependencies: you can only use packages that are compatible with BSD3, so no GPL packages. See https://www.mend.io/blog/license-compatibility/ and https://janelia-flyem.github.io/licenses.html
 
 ## Collaboration
 
-* Version control (git)
-* Pull Request
-* CI/CD check with GitHub Actions
+* Version control (git): https://www.youtube.com/watch?v=USjZcfj8yxE
+* Pull Request: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+* CI/CD with GitHub Actions: https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
 
 ## Scientific Python
 
