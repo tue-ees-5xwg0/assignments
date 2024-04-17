@@ -64,12 +64,18 @@
 * networkx: https://networkx.org/documentation/stable/tutorial.html
 * scipy.sparse.csgraph: https://docs.scipy.org/doc/scipy/reference/sparse.csgraph.html
 
+## Sparse matrix
+* sparse matrix representation: https://www.geeksforgeeks.org/sparse-matrix-representation/
+
 ## Power Grid Model
 
-* run power flow
-* (de-)serialization
+* run power flow: https://power-grid-model.readthedocs.io/en/stable/examples/Power%20Flow%20Example.html
+* (de-)serialization: https://power-grid-model.readthedocs.io/en/stable/examples/Serialization%20Example.html
 
 ## Presentation
 
-* Jupyter Notebook
-* plotting library (matplotlib, plotly, ...)
+* Jupyter Notebook: https://realpython.com/jupyter-notebook-introduction/
+* plotting library 
+  * matplotlib: https://matplotlib.org/stable/tutorials/pyplot.html
+  * plotly: https://plotly.com/python/getting-started/
+  * ...
