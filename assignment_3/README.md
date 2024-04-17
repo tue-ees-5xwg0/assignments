@@ -108,7 +108,7 @@ In this functionality, the user would like to optimize the tap position of the t
 * See the [example notebook](https://power-grid-model.readthedocs.io/en/stable/examples/Transformer%20Examples.html) for how to work with transformers in PGM.
 * After the power flow calculation with all possible tap positions, we should return the optimal tap position by
   * The minimal total energy loss of all the lines and the whole time period.
-  * The minimal (averaged acroos all nodes) deviation of (max and min) p.u. node voltages with respect to 1 p.u.
+  * The minimal (averaged across all nodes) deviation of (max and min) p.u. node voltages with respect to 1 p.u.
 * You need to design the API to let the user select what the optimization creteria is.
 
 ### N-1 calculation
