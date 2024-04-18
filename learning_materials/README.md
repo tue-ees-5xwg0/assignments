@@ -41,6 +41,7 @@
 
 * Version control (git): https://www.youtube.com/watch?v=USjZcfj8yxE
 * Pull Request: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+* Branch protection rule: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule
 * CI/CD with GitHub Actions: https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
 * Tip: use pre-commit (https://stackoverflow.com/collectives/articles/71270196/how-to-use-pre-commit-to-automatically-correct-commits-and-merge-requests-with-g) to automatically format your code to the CI/CD standards
 
