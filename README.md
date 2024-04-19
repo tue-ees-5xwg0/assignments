@@ -40,6 +40,23 @@ As a collaboration requirement, for each assignment, we require:
 * Each team member should at least post one meaningful review comment to all other PRs which is not opened by the person self.
 * Each team member should react to all comments in his/her own PR. The reaction can simply a "done" if the comment is trivial, or can be extensive explaination if the comment is substantial.
 
+### Branch protection
+
+Once the assignment repository for your team has been made, you need to enable [branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule) 
+for the `main` branch. You need to at leat enable the following rules. This will be part of your grading.
+
+* Require a pull request before merging
+  * Require approvals: minimum 2 approvals
+  * Dismiss stale pull request approvals when new commits are pushed
+* Require status checks to pass before merging
+  *  Require branches to be up to date before merging
+  *  Put `build-and-test` in the required status check
+*  Require conversation resolution before merging
+*  Do not allow bypassing the above settings
+*  Restrict who can push to matching branches
+   *  Restrict pushes that create matching branches (empty list)
+
+
 ### Test
 
 The contributed code needs to be tested for both input and invalid input.
