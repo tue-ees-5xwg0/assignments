@@ -43,7 +43,7 @@ As a collaboration requirement, for each assignment, we require:
 ### Branch protection
 
 Once the assignment repository for your team has been made, you need to enable [branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule) 
-for the `main` branch. You need to at leat enable the following rules. This will be part of your grading.
+for the `main` branch. You need to at least enable the following rules. This will be part of your grading.
 
 * Require a pull request before merging
   * Require approvals: minimum 2 approvals
