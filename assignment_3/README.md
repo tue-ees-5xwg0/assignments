@@ -142,7 +142,7 @@ We provide two datasets in the [SharePoint](https://tuenl.sharepoint.com/:f:/s/5
   * **No expected output is provided for this assignment. You need to make the expected output by yourself in the test, either via another script or manually.**
 * The `big_network` is for demo purpose. You should use it in your Jupyter Notebook presentation.
 
-**NOTE: you should NOT commit the big dataset files into git repository!. Just save them in some local folder and run your Notebook to demo them!**
+**NOTE: you should NOT commit the big dataset files into git repository! Just save them in some local folder and run your Notebook to demo them!**
 
 Just as [Assignment 2](../assignment_2/README.md#test-datasets), the network data is in PGM JSON format, and the load/EV profiles are in `parquet` format.
 
