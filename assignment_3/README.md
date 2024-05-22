@@ -134,13 +134,15 @@ To make the test reproducible, you can define random seed in your function argum
 In your test, you can set a fixed random seed so that your test can always produce the same data.
 See [this faq](https://stackoverflow.com/questions/21494489/what-does-numpy-random-seed0-do) for an exaplanation of random seed.
 
-## Test and demo datasets (work in progress)
+## Test and demo datasets
 
 We provide two datasets in the [SharePoint](https://tuenl.sharepoint.com/:f:/s/5XWG0-PowerSystemCalculationandSimualtion/Ejs9LjM7lulOtVgqstXVh7UBc4ifbYb1WQ5s2q_G0zXq3g?e=fGt80Y).
 
 * The `small_network` is for testing purpose. You should use it in your test code.
   * **No expected output is provided for this assignment. You need to make the expected output by yourself in the test, either via another script or manually.**
 * The `big_network` is for demo purpose. You should use it in your Jupyter Notebook presentation.
+
+**NOTE: you should NOT commit the big dataset files into git repository!. Just save them in some local folder and run your Notebook to demo them!**
 
 Just as [Assignment 2](../assignment_2/README.md#test-datasets), the network data is in PGM JSON format, and the load/EV profiles are in `parquet` format.
 
