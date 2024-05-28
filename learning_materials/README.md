@@ -9,7 +9,7 @@
       * Install VSCode: Download and install Visual Studio Code from the official website (https://code.visualstudio.com/).
       * Install the Python extension for VSCode: Open VSCode. Go to the Extensions view by clicking on the square icon on the sidebar or pressing Ctrl+Shift+X. Search for "Python" in the Extensions Marketplace. Click on "Install" next to the "Python" extension offered by Microsoft.
       * Open the project folder in VSCode: Go to File > Open Folder (or press Ctrl+K Ctrl+O) and select the project folder.
-      * Set up a virtual environment (optional but recommended): Open the integrated terminal in VSCode by going to View > Terminal. Create a virtual environment by running (depending on your Python version): `python -m venv .venv`. Activate the virtual environment: `.\venv\Scripts\activate`. 
+      * Set up a virtual environment (optional but recommended): Open the integrated terminal in VSCode by going to View > Terminal. Create a virtual environment by running (depending on your Python version): `python -m venv .venv`. Activate the virtual environment: `.\.venv\Scripts\activate`. 
         * If you encounter an error saying "execution of scripts is disabled on this system." Go to the last [section](#windows-powershell-setting) for solution.
       * Install dependencies: If your project requires any external packages, you can install them using pip while your virtual environment is activated. For example: `pip install <package_name>`.
       * Start coding
