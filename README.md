@@ -32,13 +32,9 @@ You are free (and you probably should if you would like to get a high score) to 
 ### Pull Requests
 
 All the assignments have to be finished in the form of 
-merging multiple Pull Requests (PRs) into the `main` branch of your repository (per team).
+merging (multiple) Pull Requests (PRs) into the `main` branch of your repository (per team).
 
-As a collaboration requirement, for each assignment, we require:
-
-* Each team member should open at least one PR to contribute some part of the assignment. The team should decide internally how to divide the tasks.
-* Each team member should at least post one meaningful review comment to all other PRs which is not opened by the person self.
-* Each team member should react to all comments in his/her own PR. The reaction can simply a "done" if the comment is trivial, or can be extensive explaination if the comment is substantial.
+**Only the code in the `main` branch will be graded in the final score. So make sure you merge the (useful) code to `main` before the final presentation.**
 
 ### Branch protection
 
