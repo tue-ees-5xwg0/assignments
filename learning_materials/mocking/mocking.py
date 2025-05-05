@@ -18,6 +18,11 @@ def triple(x):
 
 class TestMathOps(unittest.TestCase):
 
+    def test_multiply(self):
+        # This is a regular unit test (no mocking)
+        result = multiply(3, 4)
+        self.assertEqual(result, 12)
+
     @patch("__main__.multiply")
     def test_double(self, mock_multiply):
         mock_multiply.return_value = 10
