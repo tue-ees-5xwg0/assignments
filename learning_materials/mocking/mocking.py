@@ -1,27 +1,36 @@
+
+from unittest.mock import patch
 import unittest
-from unittest.mock import patch, MagicMock
-import requests
 
-# Example function to be tested
-def fetch_data_from_api(api_url):
-    # Simulate an API call
-    response = requests.get(api_url)
-    return response.json()
+# --- Code to test ---
 
-class TestMockingExample(unittest.TestCase):
-    @patch('requests.get')  # Mock the 'requests.get' method
-    def test_fetch_data_from_api(self, mock_get):
-        # Create a mock response object
-        mock_response = MagicMock()
-        mock_response.json.return_value = {'key': 'value'}
-        mock_get.return_value = mock_response
+def multiply(x, y):
+    print("Actually multiplying...")  # Simulate side effect
+    return x * y
 
-        # Call the function
-        result = fetch_data_from_api('http://fakeapi.com/data')
+def double(x):
+    return multiply(x, 2)
 
-        # Assertions
-        mock_get.assert_called_once_with('http://fakeapi.com/data')
-        self.assertEqual(result, {'key': 'value'})
+def triple(x):
+    return multiply(x, 3)
 
-if __name__ == '__main__':
+# --- Tests ---
+
+class TestMathOps(unittest.TestCase):
+
+    @patch("__main__.multiply")
+    def test_double(self, mock_multiply):
+        mock_multiply.return_value = 10
+        result = double(5)
+        self.assertEqual(result, 10)
+        mock_multiply.assert_called_once_with(5, 2)
+
+    @patch("__main__.multiply")
+    def test_triple(self, mock_multiply):
+        mock_multiply.return_value = 12
+        result = triple(4)
+        self.assertEqual(result, 12)
+        mock_multiply.assert_called_once_with(4, 3)
+
+if __name__ == "__main__":
     unittest.main()
