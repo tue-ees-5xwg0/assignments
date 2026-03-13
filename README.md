@@ -64,11 +64,8 @@ And all these checks have to be properly tested.
 ### Code style and quality
 
 The code style and quality needs to conform the predefined requiements. 
-For code styling, you should use [`isort`](https://github.com/PyCQA/isort) 
-and [`black`](https://github.com/psf/black)
-to automatically format the code.
-
-For code quality, you should use [`pylint`](https://github.com/pylint-dev/pylint) to check the code quality.
+For both code styling and code quality, you should use [`ruff`](https://github.com/astral-sh/ruff).
+Use it to automatically format the code and to check code quality.
 If you get errors, you need to inpect the error message and make the required adjustment.
 
 
