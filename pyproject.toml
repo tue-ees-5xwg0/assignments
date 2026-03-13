@@ -1,8 +1,26 @@
-[tool.black]
-line-length = 120
-target-version = ['py312']
+[project]
+name = "5xwg0-assignments"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "pyarrow",
+    "power-grid-model",
+]
 
-[tool.isort]
-profile = "black"
-combine_as_imports = true
-line_length = 120
+[dependency-groups]
+dev = [
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true

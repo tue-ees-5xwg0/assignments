@@ -1,5 +1,0 @@
-numpy
-scipy
-pandas
-pyarrow
-power-grid-model

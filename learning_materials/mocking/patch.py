@@ -1,23 +1,26 @@
-
-from unittest.mock import patch
 import unittest
+from unittest.mock import patch
 
 # --- Code to test ---
+
 
 def multiply(x, y):
     print("Actually multiplying...")  # Simulate side effect
     return x * y
 
+
 def double(x):
     return multiply(x, 2)
+
 
 def triple(x):
     return multiply(x, 3)
 
+
 # --- Tests ---
 
-class TestMathOps(unittest.TestCase):
 
+class TestMathOps(unittest.TestCase):
     def test_multiply(self):
         # This is a regular unit test (no mocking)
         result = multiply(3, 4)
@@ -36,6 +39,7 @@ class TestMathOps(unittest.TestCase):
         result = triple(4)
         self.assertEqual(result, 12)
         mock_multiply.assert_called_once_with(4, 3)
+
 
 if __name__ == "__main__":
     unittest.main()

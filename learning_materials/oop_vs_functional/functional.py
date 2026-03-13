@@ -3,7 +3,7 @@ def double(x):
 
 
 def square(x):
-    return x ** 2  # Pure Function: No side effects, always returns the same output for the same input.
+    return x**2  # Pure Function: No side effects, always returns the same output for the same input.
 
 
 def apply_function(func, arg):
@@ -16,8 +16,10 @@ result2 = apply_function(square, 3)  # Output: 9 - Function applied to argument.
 print(result1)
 print(result2)
 
-# Functions as First-Class Citizens: Functions can be assigned to variables, passed as arguments, and returned from other functions.
-add = lambda x, y: x + y
+# Functions as First-Class Citizens: Functions can be assigned to variables,
+# passed as arguments, and returned from other functions.
+add = lambda x, y: x + y  # noqa: E731
+
 print(add(3, 4))  # Output: 7 - Using a lambda function as a first-class citizen.
 
 # Immutability: Although Python allows mutable data types, functional programming encourages immutability.

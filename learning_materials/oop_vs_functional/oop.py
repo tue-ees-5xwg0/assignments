@@ -27,4 +27,3 @@ print(cat.get_name())  # Output: Whiskers - Encapsulation: Accessing the name us
 
 print(dog.speak())  # Output: Woof! - Polymorphism: Dog's speak method is called.
 print(cat.speak())  # Output: Meow! - Polymorphism: Cat's speak method is called.
-
