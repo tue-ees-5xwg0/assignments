@@ -5,14 +5,17 @@ We also provide some links to the relevant learning materials (tutorials/videos)
 
 ## Assignments
 
-We have in total three assignments. They will be also explained during the lecture.
+We have in total three main assignments plus one preparation assignment. They will be also explained during the lecture.
 See the links below for each individual assignment.
 
+* [Assignment 0](./assignment_0/README.md) - **Preparation** (setup and onboarding)
 * [Assignment 1](./assignment_1/README.md)
 * [Assignment 2](./assignment_2/README.md)
 * [Assignment 3](./assignment_3/README.md)
 
-You need to finish the assignments one by one in the given order.
+**Before starting Assignment 1**, you must complete Assignment 0 to set up your development environment, learn essential Git workflow, and ensure your team repository is properly configured.
+
+You need to finish the main assignments (1-3) one by one in the given order.
 Because later assignments depend on the result of earlier assignments.
 
 ### API
