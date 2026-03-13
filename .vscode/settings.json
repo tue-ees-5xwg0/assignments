@@ -1,5 +1,8 @@
 {
     "autoDocstring.docstringFormat": "google-notypes",
     "cmake.configureOnOpen": false,
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv"
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+    "markdownlint.config": {
+        "default": false
+    }
 }
