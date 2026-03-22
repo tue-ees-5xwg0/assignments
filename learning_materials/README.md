@@ -6,6 +6,9 @@
   * Install `uv` using the official installer command: https://docs.astral.sh/uv/getting-started/installation/
   * From the repository root, run: `uv sync`
   * Run commands inside the project environment with `uv run`.
+  * Further tutorials for `uv
+    * https://www.youtube.com/watch?v=AMdG7IjgSPM
+    * https://www.youtube.com/watch?v=6pttmsBSi8M
 * Python classes: https://www.youtube.com/watch?v=ZDa-Z5JzLYM
 * encapsulation: https://www.youtube.com/watch?v=GN1LR0UoFI4
 * Make small re-usable functions: https://codefather.tech/blog/python-functions/
