@@ -37,6 +37,7 @@ You need to test the error handling which is explicitely listed.
     * Line ID (index column)
     * Energy loss of the line across the timeline in kWh (pay attention to unit conversions!)
       * You need to use the descrete numerical integral with [Trapezoidal rule](https://en.wikipedia.org/wiki/Trapezoidal_rule).
+      * In the test dataset, the time steps are the same for the whole time series. But you should not assume that in your code. You should use the timestamps as the x-axis input for your trapezoidal integral.
     * Maximum loading in p.u. of the line across the whole timeline
     * Timestamp of this maximum loading moment
     * Minimum loading in p.u. of the line across the whole timeline
