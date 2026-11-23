@@ -41,19 +41,8 @@ merging (multiple) Pull Requests (PRs) into the `main` branch of your repository
 
 ### Branch protection
 
-Once the assignment repository for your team has been made, you need to enable [branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule) 
-for the `main` branch. You need to at least enable the following rules. This will be part of your grading.
-
-* Require a pull request before merging
-  * Require approvals: minimum 2 approvals
-  * Dismiss stale pull request approvals when new commits are pushed
-* Require status checks to pass before merging
-  *  Require branches to be up to date before merging
-  *  Put `build-and-test` in the required status check
-*  Require conversation resolution before merging
-*  Do not allow bypassing the above settings
-*  Restrict who can push to matching branches
-   *  Restrict pushes that create matching branches (empty list)
+The `main` branch is protected by branch protection rules configured at the organization level.
+When you create a pull request, all required checks must pass before it can be merged.
 
 
 ### Test
