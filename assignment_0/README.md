@@ -9,6 +9,8 @@ This assignment contains three preparation tasks to set up your development envi
 3. You have been invited to the course organization on GitHub.
 4. You have accepted the invitation by signing in with your TU/e account using single sign-on (SSO).
 
+There are two separate TU/e SSO steps, and both are required: accepting the course organization invitation (prerequisite 4) and enabling TU/e SSO when authorizing GitHub CLI in Task 1.1.
+
 **Important:** Install tools in the order listed in Task 1. GitHub CLI authentication lets you access GitHub repositories from VS Code.
 
 ## Task 1: Install and Configure Required Tools
