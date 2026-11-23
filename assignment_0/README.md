@@ -2,6 +2,13 @@
 
 This assignment contains three preparation tasks to set up your development environment and prepare for collaborative work.
 
+**You can start Assignment 0 only after you have completed all of the following prerequisites:**
+
+1. You have a GitHub account.
+2. You have enabled two-factor authentication (2FA) on your GitHub account.
+3. You have been invited to the course organization on GitHub.
+4. You have accepted the invitation by signing in with your TU/e account using single sign-on (SSO).
+
 **Important:** Install tools in the order listed in Task 1. GitHub CLI authentication lets you access GitHub repositories from VS Code.
 
 ## Task 1: Install and Configure Required Tools
