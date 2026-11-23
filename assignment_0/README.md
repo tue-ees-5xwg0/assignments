@@ -2,17 +2,28 @@
 
 This assignment contains three preparation tasks to set up your development environment and prepare for collaborative work.
 
-**Important:** Install tools in the order listed in Task 1. GitHub Desktop login provides the authentication that VS Code will use to access repositories.
+**Important:** Install tools in the order listed in Task 1. GitHub CLI authentication lets you access GitHub repositories from VS Code.
 
 ## Task 1: Install and Configure Required Tools
 
 Install and configure the following tools in order:
 
-### 1. GitHub Desktop
+### 1. GitHub CLI
 
-Download and install GitHub Desktop from [github.com/apps/desktop](https://github.com/apps/desktop) for your platform.
+Install GitHub CLI (`gh`) by following the instructions for your platform at [cli.github.com](https://cli.github.com/).
 
-After installation, launch GitHub Desktop and **log in with your GitHub account**. You'll need to authenticate to access repositories and make commits.
+After installation, open a terminal and run:
+
+```bash
+gh auth login
+```
+
+After running the command, follow these steps:
+
+- Choose **GitHub.com** (not an enterprise host).
+- Choose **HTTPS** for the preferred protocol.
+- Choose **Login with a web browser** and follow the prompts to complete login in your browser.
+- Before confirming the login, make sure to enable **"TU/e" single sign-on (SSO)**.
 
 ### 2. uv (Package Manager)
 
